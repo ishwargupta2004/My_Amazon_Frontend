@@ -58,8 +58,8 @@ const Navbar = () => {
         <div className="container-fluid">
           {/* Left Section - Logo */}
           <Link to="/" className="navbar-brand d-flex align-items-center">
-            {/* <FaAmazon className="text-warning fs-2 me-2" /> */}
-            <span className="fs-4 fw-bold">Gadget_Galaxy</span>
+            <FaAmazon className="text-warning fs-2 me-2" />
+            <span className="fs-4 fw-bold">Aeva</span>
           </Link>
 
           <form
