@@ -22,6 +22,7 @@ const TableProduct = ({ cart }) => {
     
   return (
     <>
+      <div className="table-scroll">
       <table className="table table-bordered border-primary bg-dark text-center">
         <thead>
           <tr>
@@ -133,6 +134,7 @@ const TableProduct = ({ cart }) => {
           </tr>
         </tbody>
       </table>
+      </div>
     </>
   );
 };

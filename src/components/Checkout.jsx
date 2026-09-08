@@ -88,9 +88,9 @@ const Checkout = () => {
 
   return (
     <>
-      <div className="container  my-3">
+      <div className="container my-3">
         <h1 className="text-center">Order Summary</h1>
-
+        <div className="table-scroll">
         <table className="table table-bordered border-primary bg-dark">
           <thead className="bg-dark">
             <tr>
@@ -121,6 +121,7 @@ const Checkout = () => {
             </tr>
           </tbody>
         </table>
+        </div>
       </div>
 
       <div className="container text-center my-5">

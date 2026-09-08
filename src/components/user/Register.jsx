@@ -35,7 +35,7 @@ const Register = () => {
     <>
       <div className="container my-5">
         <div className="row d-flex justify-content-center">
-          <div className="card product-card" style={{ width: "30rem" }}>
+          <div className="card product-card auth-card-wrapper">
             <div className="card-body">
               <h1 className="text-center">User Register</h1>
 

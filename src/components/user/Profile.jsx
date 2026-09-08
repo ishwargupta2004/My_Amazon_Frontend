@@ -10,7 +10,7 @@ const Profile = () => {
     <>
       <div className="container my-5">
         <div className="row d-flex justify-content-center">
-          <div className="card product-card" style={{ width: "30rem" }}>
+          <div className="card product-card auth-card-wrapper">
             <div className="card-body">
               <h1 className="text-center">
                 {" "}
@@ -28,7 +28,8 @@ const Profile = () => {
 
 
       <div className="container my-5">
-        <table className="table table-bordered border-primary bg-dark">
+        <div className="table-scroll">
+          <table className="table table-bordered border-primary bg-dark">
           <thead className="bg-dark">
             <tr>
               <th scope="col" className="bg-dark text-light text-center">
@@ -67,6 +68,7 @@ const Profile = () => {
             )}
           </tbody>
         </table>
+        </div>
       </div>
     </>
   );

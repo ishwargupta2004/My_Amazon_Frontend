@@ -60,19 +60,13 @@ const Cart = () => {
       {cart?.items?.map((product) => (
         <div
           key={product._id}
-          className="container p-3 bg-dark my-5 text-center"
+          className="container p-3 bg-dark my-4"
         >
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-around",
-              alignItems: "center",
-            }}
-          >
-            <div className="cart_img">
+          <div className="cart-item-row">
+            <div>
               <img
                 src={product.imgSrc}
-                alt=""
+                alt={product.title}
                 style={{
                   width: "100px",
                   height: "100px",
@@ -80,21 +74,21 @@ const Cart = () => {
                 }}
               />
             </div>
-            <div className="cart_des">
+            <div>
               <h2>{product.title}</h2>
               <h4>{product.price}</h4>
               <h4>Qty :- {product.qty}</h4>
             </div>
-            <div className="cart_action">
+            <div className="cart-item-actions">
               <button
-                className="btn btn-warning mx-3"
+                className="btn btn-warning"
                 style={{ fontWeight: "bold" }}
                 onClick={() => decreaseQty(product?.productId, 1)}
               >
                 Qty--
               </button>
               <button
-                className="btn btn-info mx-3"
+                className="btn btn-info"
                 style={{ fontWeight: "bold" }}
                 onClick={() =>
                   addToCart(
@@ -109,7 +103,7 @@ const Cart = () => {
                 Qty++
               </button>
               <button
-                className="btn btn-danger mx-3"
+                className="btn btn-danger"
                 style={{ fontWeight: "bold" }}
                 onClick={() => {
                   if (confirm("Are you sure, want remove from cart")) {
@@ -117,7 +111,7 @@ const Cart = () => {
                   }
                 }}
               >
-                Remove{" "}
+                Remove
               </button>
             </div>
           </div>
